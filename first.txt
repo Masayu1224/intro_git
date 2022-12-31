@@ -2,8 +2,8 @@ Gitの練習をしてきます。
 基本的なワークフローを学びます。
 ・git init 新規作成
 ・git add ステージング
-・git status
+・git status 状態の確認
 ・git commit -v
-・git log 状態の確認
+・git log 
 ・git rm 削除
 
