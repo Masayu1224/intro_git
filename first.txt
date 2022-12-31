@@ -1,3 +1,9 @@
-first git text
-ステージングエリアに追加します。
-変更しましたよ。
+Gitの練習をしてきます。
+基本的なワークフローを学びます。
+・git init 新規作成
+・git add ステージング
+・git status
+・git commit -v
+・git log 状態の確認
+・git rm 削除
+
