@@ -4,6 +4,11 @@ Gitの練習をしてきます。
 ・git add ステージング
 ・git status 状態の確認
 ・git commit -v
-・git log 
+・git logコマンドでリポジトリにコミットされたログを確認する
+	git log --oneline
+	git log -p ファイル名 
 ・git rm 削除
+・git diff ファイルの変更差分を表示する
+	git diff HEAD(ステージとコミットとの差分)
+
 
