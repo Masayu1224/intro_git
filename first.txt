@@ -10,5 +10,35 @@ Gitの練習をしてきます。
 ・git rm 削除
 ・git diff ファイルの変更差分を表示する
 	git diff HEAD(ステージとコミットとの差分)
+リモートリポジトリに登録
+・git remote addコマンドで、ローカルリポジトリからリモートリポジトリに登録できる。	
+	git remote add origin https://github.com/Masayu1224/intro_git.git
+	一度登録したらoriginのみでOK
 
+管理しないファイルをGitの管理から外す
+.gitignoreファイルに指定することで、ファイルをGitの管理から外すことができる
+	パスワードの記載したファイルなど
+	自動生成されるファイル
 
+「.gitignoreファイルの書き方」
+# #から始まる行はコメント
+# 指定したファイルを除外
+index.html
+# ルートディレクトリを指定
+/root.html
+# ディレクトリ以下を除外
+dir/
+
+コミットしてしまったファイルを管理から外すには、
+git rmコマンドで、コミットしたファイルをGitの管理から削除できる。
+
+ファイルごとGitの管理から削除
+git rm ファイル名
+git rm -r ディレクトリ名
+
+ファイルは残す場合
+git rm --cached ファイル名　　　.gitignoreに追記する
+
+元に戻すとき、
+git reset HEAD ファイル名
+git checkout second.txt
